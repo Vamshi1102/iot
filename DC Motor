@@ -1,0 +1,23 @@
+void setup()
+{
+ pinMode(2, OUTPUT);
+ pinMode(3, OUTPUT);
+ }
+void loop()
+{
+ digitalWrite(2, LOW);// MOTOR1 CLOCK WISE DIRECTION
+ digitalWrite(3, HIGH);
+  delay(2000); // Wait for 3000 millisecond(s)
+  
+ digitalWrite(2, LOW);// MOTOR1 HALTS
+ digitalWrite(3, LOW);
+ delay(2000); // Wait for 3000 millisecond(s)
+ 
+ digitalWrite(2, HIGH);// MOTOR1 ANTI CLOCK WISE DIRECTION
+ digitalWrite(3, LOW);
+  delay(2000); // Wait for 3000 millisecond(s)
+  
+ digitalWrite(2, LOW);// MOTOR1 HALTS
+ digitalWrite(3, LOW);
+  delay(2000); // Wait for 3000 millisecond(s)
+}
